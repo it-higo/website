@@ -1,0 +1,772 @@
+* {
+    margin: 0;
+    padding: 0
+}
+
+body {
+    background: #000000;
+}
+
+a {
+    text-decoration: none;
+}
+
+ul,
+ol {
+    list-style: none;
+}
+
+img {
+    border: none;
+}
+
+input,
+textarea {
+    outline: none;
+}
+
+html {
+    font-family: "Microsoft YaHei Regular";
+}
+
+/* 自适应屏幕设置 */
+/* @media (min-width:320px){
+    html,body{ font-size: 55.55%;} 
+}
+@media (min-width:360px){
+    html,body{ font-size: 62.5%;} 
+}
+@media (min-width:375px){
+    html,body{ font-size: 65.103%;} 
+}
+@media (min-width:414px){
+    html,body{ font-size: 71.875%;} 
+}
+@media (min-width:480px){
+    html,body{ font-size: 83.3325%;} 
+}
+@media (min-width:640px){
+    html,body{ font-size: 111.111%;} 
+}
+@media (min-width:720px){
+    html,body{ font-size: 125%;} 
+} */
+
+.swiper {
+    --swiper-theme-color: #ff6600;
+    --swiper-navigation-color: #ffffff;
+}
+
+.mySwiper {
+    /* height: 1030px; */
+    max-height: 1030px;
+}
+
+@media screen and (orientation:portrait) {
+    .mySwiper {
+        display: none
+    }
+}
+
+@media (max-width:960px) {
+    .mySwiper {
+        display: none
+    }
+}
+
+.topBannerBg {
+    width: 100%;
+    height: 72px;
+    max-height: 72px;
+    position: fixed;
+    -webkit-backdrop-filter: blur(8px);
+    backdrop-filter: blur(8px);
+    background: url(../images/higo_cd_hl.png) no-repeat;
+    background-size: cover;
+    opacity: 0.8;
+    z-index: 888;
+}
+
+@media (max-width:960px) {
+    .topBannerBg {
+        -webkit-box-pack: start;
+        height: 72px;
+        -webkit-justify-content: flex-start;
+        -moz-box-pack: start;
+        -ms-flex-pack: start;
+        justify-content: flex-start;
+        opacity: 1;
+    }
+}
+
+.logo {
+    background: url(../images/logo.png) no-repeat;
+    -o-background-size: contain;
+    background-size: contain;
+    background-position: center;
+    display: block;
+    height: 52px;
+    max-height: 52px;
+    left: 12.5%;
+    position: fixed;
+    width: 188px;
+    z-index: 998;
+    margin-top: 10px;
+}
+
+@media screen and (orientation:portrait) {
+    .logo {
+        display: none
+    }
+}
+
+.phoneLogo {
+    display: none;
+    width: 100%;
+    height: 52.36111vw;
+    max-height: 377px;
+    background: url(../images/yd_tp_bjfm1.jpg) no-repeat;
+    -o-background-size: cover;
+    background-size: cover;
+    background-position: center;
+}
+
+@media screen and (orientation:portrait) {
+    .phoneLogo {
+        display: -webkit-box;
+        display: -webkit-flex;
+        display: -moz-box;
+        display: -ms-flexbox;
+        display: flex;
+        -webkit-box-pack: center;
+        -webkit-justify-content: center;
+        -moz-box-pack: center;
+        -ms-flex-pack: center;
+        justify-content: center;
+        -webkit-box-align: center;
+        -webkit-align-items: center;
+        -moz-box-align: center;
+        -ms-flex-align: center;
+        align-items: center;
+    }
+}
+@media (max-width:960px) {
+    .phoneLogo {
+        display: -webkit-box;
+        display: -webkit-flex;
+        display: -moz-box;
+        display: -ms-flexbox;
+        display: flex;
+        -webkit-box-pack: center;
+        -webkit-justify-content: center;
+        -moz-box-pack: center;
+        -ms-flex-pack: center;
+        justify-content: center;
+        -webkit-box-align: center;
+        -webkit-align-items: center;
+        -moz-box-align: center;
+        -ms-flex-align: center;
+        align-items: center;
+    }
+}
+
+.topBannerBg .CZgO78 {
+    right: 12%;
+}
+
+.topBannerBg .CZgO78,
+.PGWyRm nav .QIWDho:not(:last-child):after {
+    position: absolute;
+    top: 50%;
+    -webkit-transform: translateY(-50%);
+    -moz-transform: translateY(-50%);
+    -ms-transform: translateY(-50%);
+    -o-transform: translateY(-50%);
+    transform: translateY(-50%);
+}
+
+.topBannerBg .CZgO78 .UK8TK0 {
+    -webkit-box-align: center;
+    -webkit-box-pack: end;
+    -webkit-align-items: center;
+    -moz-box-align: center;
+    -ms-flex-align: center;
+    align-items: center;
+    display: -webkit-box;
+    display: -webkit-flex;
+    display: -moz-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-justify-content: flex-end;
+    -moz-box-pack: end;
+    -ms-flex-pack: end;
+    justify-content: flex-end;
+    line-height: 1;
+    width: 100%;
+}
+
+.topBannerBg .CZgO78 .UK8TK0 .ZQYw9S {
+    background: url(../images/higo_fgx.png) no-repeat;
+    height: 1.125rem;
+    margin: 0 0.35rem 0 1rem;
+    width: .75rem;
+}
+
+.topBannerBg .CZgO78 .UK8TK0 span,
+.PGWyRm .CZgO78 .UK8TK0 button {
+    color: #fff;
+    cursor: pointer;
+    font-size: 16px;
+    line-height: 1;
+    -webkit-text-decoration: none;
+    text-decoration: none;
+    text-shadow: 0 0.125rem 0.375rem rgba(0, 0, 0, .302);
+}
+
+.active {
+    font-weight: bold;
+    color: #00fffc !important;
+}
+
+.introduce {
+    position: absolute;
+    z-index: 506;
+    top: 18%;
+    left: 12%;
+    max-width: 960px;
+}
+
+@media (max-width:960px) {
+    .introduce {
+        position: static;
+        left: 0;
+    }
+}
+
+.slogan {
+    margin-bottom: 60px;
+}
+
+.slogan img {
+    width: 100%;
+}
+
+@media (max-width:960px) {
+    .slogan {
+        margin: 0;
+    }
+}
+
+.En_Us,
+.En_Ch,
+.EmailAddress {
+    display: none;
+}
+
+
+.contentbox {
+    color: #fff;
+    -webkit-transition: opacity .3s ease-in;
+    -o-transition: opacity .3s ease-in;
+    -moz-transition: opacity .3s ease-in;
+    transition: opacity .3s ease-in;
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+}
+
+@media (max-width:960px) {
+    .contentbox {
+        background-color: rgba(0, 0, 0, .88);
+        -webkit-box-shadow: none;
+        box-shadow: none;
+    }
+}
+
+.aboutus .m412NU {
+    cursor: pointer;
+}
+
+.callus .m412NU {
+    cursor: pointer;
+}
+
+.En_Ch .aboutus .m412NU .WIMfCz .Underline img {
+    width: 160px;
+    height: 8px;
+}
+
+.En_Us .joinus .m412NU .WIMfCz .Underline img {
+    width: 350px;
+    height: 8px;
+}
+
+.En_Ch .joinus .m412NU .WIMfCz .Underline img {
+    width: 260px;
+    height: 8px;
+}
+
+.En_Ch .callus .m412NU .WIMfCz .Underline img {
+    width: 180px;
+    height: 8px;
+}
+
+.contentbox .m412NU {
+    display: -webkit-box;
+    display: -webkit-flex;
+    display: -moz-box;
+    display: -ms-flexbox;
+    display: flex;
+    padding: 10px;
+    position: relative;
+    margin-bottom: 18px;
+}
+
+
+.contentbox .m412NU .WIMfCz {
+    -webkit-box-align: center;
+    -webkit-align-items: center;
+    -moz-box-align: center;
+    -ms-flex-align: center;
+    align-items: center;
+    font-size: 1em;
+    height: 20px;
+    line-height: 1;
+    margin: 0;
+}
+
+.contentbox .m412NU .WIMfCz .kRjBLY {
+    -webkit-box-align: end;
+    -webkit-align-items: flex-end;
+    -moz-box-align: end;
+    -ms-flex-align: end;
+    align-items: flex-end;
+    display: -webkit-box;
+    display: -webkit-flex;
+    display: -moz-box;
+    display: -ms-flexbox;
+    display: flex;
+}
+
+.contentbox .m412NU .WIMfCz .kRjBLY div:first-child {
+    font-size: 28px;
+}
+
+.contentbox .m412NU .WIMfCz .kRjBLY .WwThKe {
+    font-size: 16px;
+    margin-left: 1em;
+    text-transform: uppercase;
+}
+
+.contentbox ._M9vgl.clcaVX {
+    padding: 0 10px 10px;
+}
+
+.contentbox ._M9vgl {
+    font-size: .75em;
+    line-height: 1.33333;
+    max-width: 556px;
+}
+
+
+.En_Us .contentbox ._M9vgl p {
+    margin: 0;
+    font-size: 14px;
+}
+
+.En_Ch .contentbox ._M9vgl p {
+    margin: 0;
+    font-size: 16px;
+}
+
+
+
+.EmailAddress {
+    padding-left: 10px;
+    margin-top: 55px;
+    color: #fff;
+}
+
+@media (max-width:960px) {
+    .EmailAddress {
+        position: static;
+        background-color: rgba(0, 0, 0, .88);
+        -webkit-box-shadow: none;
+        box-shadow: none;
+        padding: 20px 0 0 10px;
+        margin: 0;
+    }
+}
+
+
+/* banner */
+.swiper-button-next,
+.swiper-button-prev {
+    background: none;
+}
+
+.swiper-button-prev:after,
+.swiper-rtl .swiper-button-next:after {
+    content: none;
+}
+
+.swiper-button-next:after,
+.swiper-rtl .swiper-button-prev:after {
+    content: none;
+}
+
+.iconfont {
+    color: #fff;
+    cursor: pointer;
+    display: block;
+    font-size: 50px;
+    height: 80px;
+    line-height: 80px;
+    /* margin-top: -40px; */
+    position: fixed;
+    text-align: center;
+    text-shadow: 0 0 15px #000;
+    -webkit-transition: all .5s ease-in-out;
+    -o-transition: all .5s ease-in-out;
+    -moz-transition: all .5s ease-in-out;
+    transition: all .5s ease-in-out;
+    width: 40px;
+    z-index: 100;
+}
+
+
+.RotationDisplay {
+    height: 591px;
+    position: absolute;
+    max-width: 2200px;
+    width: 100%;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    z-index: 700;
+    display: none;
+    justify-content: center;
+    align-items: center;
+    background: url(../images/higo_cd_tc.png) no-repeat;
+    background-size: cover;
+}
+
+@media (max-width:960px) {
+    .RotationDisplay {
+        height: 540px;
+        transform: translate(-50%, -20%);
+    }
+}
+
+@media (max-width:700px) {
+    .RotationDisplay {
+        height: 375px;
+    }
+}
+
+.RotationDisplay .ModalmySwiper {
+    max-height: 471px;
+}
+
+.RotationDisplay .ModalmySwiper .swiper-slide {
+    border-right: 3px solid #000000;
+}
+
+.RotationDisplay .ModalmySwiper .swiper-slide img {
+    width: 100%;
+    height: 100%;
+}
+
+.RotationDisplay .RotationHeader {
+    position: absolute;
+    top: 4px;
+    color: #ffffff;
+    width: 100%;
+}
+
+.RotationDisplay .RotationHeader .HeaderTitle {
+    position: absolute;
+    left: 12%;
+}
+
+.RotationDisplay .RotationHeader .HeaderTitle .qRjBLS {
+    -webkit-box-align: end;
+    -webkit-align-items: flex-end;
+    -moz-box-align: end;
+    -ms-flex-align: end;
+    align-items: flex-end;
+    display: -webkit-box;
+    display: -webkit-flex;
+    display: -moz-box;
+    display: -ms-flexbox;
+    display: flex;
+}
+
+.RotationDisplay .RotationHeader .HeaderTitle .qRjBLS div {
+    font-size: 28px;
+}
+
+.RotationDisplay .RotationHeader .HeaderTitle .Line {
+    margin-top: -8px;
+}
+
+.RotationDisplay .RotationHeader .HeaderTitle .Line img {
+    width: 184px;
+}
+
+.RotationDisplay .RotationHeader .HeraderClose {
+    width: 30px;
+    position: absolute;
+    right: 10%;
+    top: 10px;
+    cursor: pointer;
+}
+
+
+.RecruitmentDisplay {
+    position: absolute;
+    max-width: 2200px;
+    width: 100%;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    z-index: 700;
+    display: none;
+    justify-content: center;
+    align-items: center;
+    background: url(../images/higo_cd_tc.png) no-repeat;
+    background-size: cover;
+}
+
+@media (max-width:960px) {
+    .RecruitmentDisplay {
+        transform: translate(-50%, -20%);
+    }
+}
+
+@media (max-width:700px) {
+    .RecruitmentDisplay {
+        height: 600px;
+        transform: translate(-50%, -35%);
+    }
+}
+
+.RecruitmentDisplay .RecruitmentHeader {
+    position: absolute;
+    top: 4px;
+    color: #ffffff;
+    width: 100%;
+}
+
+.RecruitmentDisplay .RecruitmentHeader .HeaderTitle {
+    position: absolute;
+    left: 12%;
+}
+
+.RecruitmentDisplay .RecruitmentHeader .HeaderTitle .qRjBLS {
+    -webkit-box-align: end;
+    -webkit-align-items: flex-end;
+    -moz-box-align: end;
+    -ms-flex-align: end;
+    align-items: flex-end;
+    display: -webkit-box;
+    display: -webkit-flex;
+    display: -moz-box;
+    display: -ms-flexbox;
+    display: flex;
+}
+
+.RecruitmentDisplay .RecruitmentHeader .HeaderTitle .qRjBLS div {
+    font-size: 28px;
+}
+
+.RecruitmentDisplay .RecruitmentHeader .HeaderTitle .Line {
+    margin-top: -8px;
+}
+
+.RecruitmentDisplay .RecruitmentHeader .HeaderTitle .Line img {
+    width: 184px;
+}
+
+.RecruitmentDisplay .RecruitmentHeader .HeraderClose {
+    width: 30px;
+    position: absolute;
+    right: 10%;
+    top: 10px;
+    cursor: pointer;
+}
+
+
+.RecruitmentDisplay .RecruitmentMean {
+    width: 100%;
+    padding-top: 50px;
+}
+
+.RecruitmentDisplay .RecruitmentMean .MeanRow {
+    max-width: 1200px;
+    margin: 20px auto;
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(368px, 1fr));
+    gap: 10px;
+    height: 650px;
+    overflow: auto;
+}
+.MeanRow::-webkit-scrollbar {
+    display: none; 
+}
+
+
+@media (max-width:700px) {
+    .RecruitmentDisplay .RecruitmentMean .MeanRow {
+        height: 420px;
+    }
+}
+
+.RecruitmentDisplay .RecruitmentMean .MeanRow .MeanCol {
+    max-width: 368px;
+    max-height: 308px;
+    position: relative;
+    height: 308px;
+    margin: auto;
+    cursor: pointer;
+}
+.RecruitmentDisplay .RecruitmentMean .MeanRow .MeanCol .ColImg{
+    position: absolute;
+    z-index: -1;
+}
+.RecruitmentDisplay .RecruitmentMean .MeanRow .MeanCol .ColTitle{
+    font-size: 30px;
+    padding: 15px 0 0 20px;
+    font-weight: bold;
+    min-height: 90px;
+}
+.RecruitmentDisplay .RecruitmentMean .MeanRow .MeanCol .ColText{
+    font-size: 21px;
+    padding: 16px 15px 0 20px;
+    height: 110px;
+    display: -webkit-box;           /* 使用 flexbox 模型 */
+    -webkit-box-orient: vertical;  /* 垂直布局 */
+    -webkit-line-clamp: 4;         /* 限制行数为 4 */
+    overflow: hidden;               /* 隐藏超出部分 */
+    text-overflow: ellipsis;        /* 使用省略号 */
+    max-height: 6em;                /* 最大高度，行数 x 行高 */
+}
+.RecruitmentDisplay .RecruitmentMean .MeanRow .MeanCol .ColTag{
+    position: relative;
+    padding-left: 20px;
+    overflow: auto;
+    margin-top: 5px;
+}
+.RecruitmentDisplay .RecruitmentMean .MeanRow .MeanCol .ColTag .Tag{
+    float: left;
+    border: 1px solid #3e3e3e;
+    padding: 8px 15px;
+    margin: 10px 10px 0 0;
+    border-radius: 22px;
+}
+.RecruitmentDisplay .RecruitmentMean .MeanRow .MeanCol .ColTag .Cntag{
+    padding: 8px 30px;
+}
+
+
+
+.DetailsDisplay {
+    position: absolute;
+    max-width: 2200px;
+    width: 100%;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    z-index: 700;
+    display: none;
+    justify-content: center;
+    align-items: center;
+    background: url(../images/higo_cd_tc.png) no-repeat;
+    background-size: cover;
+}
+
+@media (max-width:960px) {
+    .DetailsDisplay {
+        transform: translate(-50%, -20%);
+    }
+}
+
+@media (max-width:700px) {
+    .DetailsDisplay {
+        height: 600px;
+        transform: translate(-50%, -35%);
+    }
+}
+
+.DetailsDisplay .DetailsHeader {
+    position: absolute;
+    top: 4px;
+    color: #ffffff;
+    width: 100%;
+}
+
+.DetailsDisplay .DetailsHeader .HeraderClose {
+    width: 30px;
+    position: absolute;
+    right: 10%;
+    top: 10px;
+    cursor: pointer;
+}
+
+.DetailsDisplay .DetailsMean {
+    min-height: 700px;
+    width: 100%;
+    padding-top: 70px;
+}
+
+.DetailsDisplay .DetailsMean .DetailsContent{
+    max-width: 1260px;
+    margin: auto;
+    height: 630px;
+    border-radius: 20px;
+    padding: 10px;
+    background: #ffffff;
+}
+.DetailsDisplay .DetailsMean .DetailsContent .DetailsBackground{
+    width: 100%;
+    height: 100%;
+    border-radius: 20px;
+    overflow: auto;
+}
+
+.DetailsBackground::-webkit-scrollbar {
+    display: none; 
+}
+.DetailsDisplay .DetailsMean .DetailsContent .DetailsBackground .DetailsPadding{
+    padding: 20px;
+}
+.DetailsDisplay .DetailsMean .DetailsContent .DetailsTitle,
+.DetailsDisplay .DetailsMean .DetailsContent .bigTag{
+    font-size: 30px;
+    font-weight: bold;
+}
+.DetailsDisplay .DetailsMean .DetailsContent .smallTag{
+    font-size: 18px;
+}
+.DetailsDisplay .DetailsMean .DetailsContent .DetailsText{
+    font-size: 20px;
+    margin-top: 30px;
+    padding-left: 15px;
+}
+.DetailsDisplay .DetailsMean .DetailsContent .DetailsText p{
+    margin: 10px 0;
+}
+.DetailsDisplay .DetailsMean .DetailsContent .contactus{
+    padding-left: 15px;
+    margin-top: 40px;
+}
+.DetailsDisplay .DetailsMean .DetailsContent .contactus .contactTitle{
+    font-size: 24px;
+    font-weight: bold;
+    margin-bottom: 20px;
+}
+.DetailsDisplay .DetailsMean .DetailsContent .contactus .contactText{
+    font-size: 18px;
+    margin-bottom: 10px;
+}
